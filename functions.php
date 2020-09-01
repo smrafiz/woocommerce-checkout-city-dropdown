@@ -2,7 +2,7 @@
  * Function to get US city data from local json file.
  */
 function cx_get_json_city_data() {
-    $json_url = file_get_contents( get_template_directory() . './us-cities.json' );
+	$json_url = file_get_contents( get_template_directory() . './us-cities.json' );
 	$data = json_decode( $json_url );
 
 	$cities = array();
